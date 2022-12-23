@@ -1,2 +1,5 @@
 # Password-Generator
- Customisable random password generator, with options to choose length and toggle numbers/symbols on or off.
+
+ Customisable random password generator.
+ Choose your length with a helpful visual strength indicator and toggle numbers/symbols on or off to create your next unique password. 
+
