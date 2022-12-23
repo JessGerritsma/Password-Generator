@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Karla:wght@400;800&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="main">
+            <div id="top-div">
+                <h1 class="heading">Generate a <br>
+                <span class="colored heading" id="colored-heading">random password<span></h1>
+                <p id="tagline">Never use an insecure password again</p>
+                <div class="customize-wrap">
+                    <div class="slide-container">
+                        <input type="range" min="6" max="15" value="" class="slider" id="pwd-range">
+                        <p id="pwd-length-display"></p>
+                    </div>
+                    <div class="radio-wrap">
+                        <div class="radio">
+                            <input class="radio_input" id="all-characters" name="encryption-style" type="radio" value="characters-all" checked>
+                            <label class="radio_label" for="all-characters">
+                                    All Characters
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <input class="radio_input" id="no-symbols" name="encryption-style" type="radio" value="symbols-off">
+                            <label class="radio_label" for="no-symbols">
+                                    No Symbols
+                            </label>
+                        </div>
+                        <div class="radio">
+                            <input class="radio_input" id="no-numbers" name="encryption-style" type="radio" value="numbers-off">
+                            <label class="radio_label" for="no-numbers">
+                                    No Numbers 
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <button class="button" onclick="generatePwd()">Generate passwords</button>
+            </div> 
+            <div id="line-br-div"></div>
+            <div id="bottom-div">
+                <div class="pwd-box">
+                    <button class="copy-text-btn" id="copy-pwd-one" onclick="copyTextOne()"></button>
+                    <p id="pwd-one" class="rand-password"></p>
+                </div>
+                <div  class="pwd-box">
+                    <button class="copy-text-btn" id="copy-pwd-two" onclick="copyTextTwo()"></button>
+                    <span id="snackbar">Successfully Copied</span>
+                    <p id="pwd-two" class="rand-password"></p>
+                </div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
